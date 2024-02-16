@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cossukulogin</title>
+    <style>
+
+
+
+
+
+
+
+
+
+.container{
+    height: 400px;
+    width: 100%;
+    position:relative;
+    padding-top: 0px;
+    left: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+.sun{
+    width:50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 30px white;
+    position:absolute;
+    top:120px;
+    left:100px;
+
+}
+.globe.earth{
+    background: aqua;
+    height: 30px;
+    top:28px;
+    width:30px;
+
+}
+.globe.moon{
+width: 12px;
+height:12px;
+background: #d6d6d6;
+right:2px;
+top:8px;
+
+
+}
+.globe{
+border-radius: 50%;
+position: absolute;
+}
+.orbit.earth{
+    position: relative;
+    animation: orbit 36.5s linear infinite;
+    height: 200px;
+    left:30px;
+    top:30px;
+    width: 200px;
+
+}
+.orbit.moon{
+    animation:orbit 2.7s linear infinite;
+    height:80px; left:-25px; right:-25px; width:80px;
+}
+.orbit{
+    position:relative;
+    border: solid;
+    border-color:white transparent 
+    transparent transparent;
+    border-radius: 50%; 
+    border-width: 1px 1px 0 0;
+    box-sizing: border-box;
+    transform: rotate(0deg); 
+    transform-origin: center;
+
+}
+@keyframes orbit{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+#hero-container{
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    min-height:70vh;
+gap: 0.5rem;
+background-color:aliceblue;
+}
+#hii{
+    background-color: aliceblue;
+}
+#heror{
+    background-color: rgb(148, 153, 157);
+    border-radius: 3%;
+padding: 0%;
+flex-direction: column;
+padding-left: 2rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+}
+
+#lerr{
+color: purple;
+}
+
+#herol{
+    background-color: rgb(202, 204, 206);
+    border-radius: 2%;
+  
+display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center;
+  justify-content: center;
+}
+#im{
+    
+  
+  width: 80%; /* Ensure the image takes the full width */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+#ma{
+    width: 80%; /* Ensure the image takes the full width */
+    height: auto;
+}
+
+#how{
+
+    color:purple;
+    font-size: 25px;
+
+}
+#btnhero{
+
+
+    align-self: center;
+    padding: 20px;
+    color: purple;
+    font-size: 25px;
+    border-radius: 50px;
+}
+#btnhero:hover{
+    background-color: rgb(196, 19, 166);
+    color:white;
+
+}
+#try{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid purple;
+    padding: 0.75rem;
+    border-radius: 50px;
+text-decoration: none;
+}
+#try:hover{
+    background-color: purple;
+    color: white;
+}
+
+#head{
+
+    color: purple;
+    font-size: 30px;
+}
+h3{
+    color:green;
+    font-size: 15;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+   
+    
+   
+    <div id="hero-container"> 
+        <div id="herol"> 
+            <h2 id="head">Hi Tech General, Welcome to </h2> 
+            
+                <div class="container">
+                    <div class="sun"></div>
+                    <div class="orbit earth">
+                        <div class="globe earth">
+                            <div class="orbit moon">
+                                <div class="globe moon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+        <center>
+            <h1 id="how">COSSUKUL TECHNOLOGY CLUB</h1>
+          <h2>"The world is moving with Technology, Let Your Tech Dreams Come To reality</h2>
+        </center>
+        
+        
+        <a href="home.html"><button  id="btnhero">Click to Continue</button></a><br/>
+        
+        
+        </div>
+        <div id="heror"><h3> New Tech today</h3><br><img href="home.html" id='ma' src="IMG_20231020_154645.jpg"/><br><h3>By Gilbert Webs</h3></div>
+      
+        </div>
+</body>
+</html>
