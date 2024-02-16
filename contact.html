@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | COSSUKUL TECH CLUB</title>
+   
+
+<style>
+
+
+
+
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Contact Us Section Styles */
+#contact {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="container">
+        <h1 class="logo">COSSUKUL TECH CLUB</h1>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="photos.goo.gl">Gallery</a></li>
+           
+            <li><a href="tech-news.html">Tech News</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for any inquiries, feedback, or suggestions. We'd love to hear from you!</p>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 COSSUKUL TECH CLUB. All rights reserved. @Gilbert Developer</p>
+    </div>
+</footer>
+
+</body>
+</html>
